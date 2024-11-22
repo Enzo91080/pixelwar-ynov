@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel War</title>
+    <style>
+        #canvas { border: 1px solid black; }
+        #chat { margin-top: 10px; }
+        #messageInput { width: calc(100% - 100px); }
+    </style>
+</head>
+<body>
+    <h1>Pixel War</h1>
+    <div id="login">
+        <label for="username">Pseudo :</label>
+        <input type="text" id="username">
+        <button id="connectButton">Se connecter</button>
+    </div>
+    <div id="game" style="display: none;">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <button id="eraseButton">Effacer</button>
+        <div id="chat">
+            <div id="chatMessages" style="border: 1px solid black; height: 150px; overflow-y: auto;"></div>
+            <input type="text" id="messageInput" placeholder="Entrez votre message">
+            <button id="sendButton">Envoyer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
